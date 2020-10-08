@@ -45,6 +45,7 @@ public class HomeWork extends BaseCase {
     public void test1() throws InterruptedException {
         //1.1 课堂：加入班级、进入班级、 退课
         IndexPages indexPages = new IndexPages(driver);
+        indexPages.exitClass();
         indexPages.addClass();
         Thread.sleep(2000);
         indexPages.exitClass();
