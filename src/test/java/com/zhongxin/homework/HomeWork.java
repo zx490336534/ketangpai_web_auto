@@ -7,6 +7,7 @@ import com.zhongxin.pags.IndexPages;
 import com.zhongxin.pags.LetterPages;
 import com.zhongxin.pags.LoginPages;
 import com.zhongxin.common.UploadFile;
+import io.qameta.allure.Description;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -40,6 +41,7 @@ public class HomeWork extends BaseCase {
     }
 
     @Test
+    @Description("1.1 课堂：加入班级、进入班级、 退课")
     public void test1() throws InterruptedException {
         //1.1 课堂：加入班级、进入班级、 退课
         IndexPages indexPages = new IndexPages(driver);
@@ -49,6 +51,7 @@ public class HomeWork extends BaseCase {
     }
 
     @Test
+    @Description("私信：发送私信")
     public void test2() throws InterruptedException {
         //1.2 作业：上传作业、作业留言、查看作业提交状态
         IndexPages indexPages = new IndexPages(driver);
@@ -63,6 +66,7 @@ public class HomeWork extends BaseCase {
     }
 
     @Test
+    @Description("Some detailed test description")
     public void test3() throws InterruptedException {
         driver.get(Constants.CHAT_URL);
         LetterPages letterPages = new LetterPages(driver);
