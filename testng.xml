@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="futureloan">
+    <test name="作业">
+        <classes>
+            <class name="com.zhongxin.homework.HomeWork"></class>
+        </classes>
+    </test>
+</suite>
