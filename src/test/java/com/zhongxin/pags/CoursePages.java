@@ -21,7 +21,7 @@ public class CoursePages extends BasePage {
     public void doaddHomework() {
         click(homework);
         click(uploadHomework);
-        click(addHomework);
+//        click(addHomework);
     }
 
     public void finallyadd() {
